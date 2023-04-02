@@ -1,0 +1,36 @@
+// import { Typography, Container } from '@mui/material'
+// import Products from './components/Products'
+
+// import { useGetProducts } from './hooks/useGetProducts'
+
+// const App = () => {
+//   const { products, loading, error } = useGetProducts()
+
+//   let visableContent = <Products products={products} />
+
+//   if (loading && !error) {
+//     visableContent = <p>Loading ...</p>
+//   }
+
+//   if (error) {
+//     visableContent = <p>{error?.errMessage}</p>
+//   }
+
+//   return (
+//     <Container sx={{ textAlign: 'center', p: 4 }}>
+//       <>
+//         <Typography
+//           variant="h1"
+//           component="h2"
+//           color="secondary"
+//           sx={{ pb: 2 }}
+//         >
+//           Products
+//         </Typography>
+//         {visableContent}
+//       </>
+//     </Container>
+//   )
+// }
+
+// export default App

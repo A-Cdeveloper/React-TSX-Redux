@@ -1,9 +1,10 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
 import App from './App'
 
-test('renders learn react link', () => {
-  render(<App />)
-  const linkElement = screen.getByText(/Initial/i)
-  expect(linkElement).toBeInTheDocument()
+describe('App component render', () => {
+  test('Headline render', () => {
+    render(<App />)
+    const headerElement = screen.getByRole('heading', { level: 2 })
+    expect(headerElement).toBeInTheDocument()
+  })
 })
